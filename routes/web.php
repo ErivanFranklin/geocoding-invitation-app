@@ -15,7 +15,7 @@ use App\Http\Controllers\InviteController;
 */
 
 Route::get('/', function(){
-    return view('layout.index');
+    return view('pages.index');
 });
 
 Route::get('/invite', [InviteController::class, 'view'])->name('invite');
