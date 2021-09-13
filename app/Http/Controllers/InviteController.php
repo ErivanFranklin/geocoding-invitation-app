@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
@@ -14,7 +15,8 @@ class InviteController extends Controller
         $this->invite = new InviteModel();
     }
 
-    public function view(){
+    public function view()
+    {
         return view('post.invite', ['invite' => $this->invite->getAllInvites()]);
     }
 }
